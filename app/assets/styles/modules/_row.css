@@ -38,10 +38,14 @@
         margin-bottom: 1.3rem;
     }
 
+    &__t-margin {
+        margin-top: 3rem;
+    }
+
     @mixin atMedium {
         &__b-margin-until-medium {
             margin-bottom: 0;
-        }
+        } 
     }
 
     @mixin atMedium {
