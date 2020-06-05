@@ -53,6 +53,14 @@
             padding: 12px 0;
             font-size: 1rem;
             background-color: transparent;
+
+            &.is-current-link {
+                color: #fabb69;
+            }
+        }
+
+        .site-header--dark & {
+            padding: 15px 0;
         }
     }
 }
