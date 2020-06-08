@@ -19,7 +19,8 @@
     }
 
     &__btn-container {
-        transition: border .3s ease-out;
+        transition: all .3s ease-out;
+        transform: scale(.9);
 
         @mixin atMedium{
         float: right;
@@ -27,6 +28,7 @@
 
         .site-header--dark & {
             border: $mainOrange 1px solid;
+            transform: scale(1);
         }
     }
 
