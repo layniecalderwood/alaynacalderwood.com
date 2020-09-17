@@ -2,65 +2,65 @@
     padding-top: 10px;
     padding-bottom: 4px;
 
-    @mixin atMedium {
+    @media (min-width: 800px) {
         padding-top: 0;
         padding-bottom: 0;
     }
+}
 
-    &--pull-right {
+.primary-nav--pull-right {
         
-        @mixin atMedium {
+    @media (min-width: 800px) {
         float: right;
         }
-    }
+}
 
-    ul {
-        margin: 0;
-        padding: 0;
-        @mixin clearfix;
-    }
+ul {
+    margin: 0;
+    padding: 0;
+    @mixin clearfix;
+}
 
-    li {
-        list-style: none;
-        display: inline-block;
-        padding-right: 7px;
+li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 7px;
 
-        @mixin atMedium {
-            float: left;
-            display: block;
-            padding-right: 20px;
-        }
-    }
-
-    li:last-child {
-        padding-right: 0;
-
-        @mixin atMedium {
-            padding-right: 20px;
-        }
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-        font-weight: 300;
+    @media (min-width: 800px) {
+        float: left;
         display: block;
-        padding: 5px 8px;
-        font-size: .8rem;
-        background-color: rgba($mainBlue, .5);
+        padding-right: 20px;
+    }
+}
 
-        @mixin atMedium {
-            padding: 12px 0;
-            font-size: 1rem;
-            background-color: transparent;
+li:last-child {
+    padding-right: 0;
 
-            &.is-current-link {
-                color: #fabb69;
-            }
+    @media (min-width: 800px) {
+        padding-right: 20px;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    padding: 5px 8px;
+    font-size: .8rem;
+    background-color: rgba(#386641, .4);
+
+    @media (min-width: 800px) {
+        padding: 13px 0 0 0;
+        font-size: 1.2rem;
+        background-color: transparent;
+
+        &.is-current-link {
+            color: #ffc0cb;
         }
+    }
 
-        .site-header--dark & {
-            padding: 15px 0;
-        }
+    .site-header--dark {
+        padding: 15px 0;
     }
 }

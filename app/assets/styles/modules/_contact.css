@@ -1,0 +1,8 @@
+.contact__icon {
+    color: white;
+    padding: 45px 0 20px 0;
+}
+
+.contact__icon:hover {
+    color: #C0D6DF;
+}

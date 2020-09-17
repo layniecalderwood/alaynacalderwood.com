@@ -2,31 +2,31 @@
     position: relative;
     padding-bottom: 2.5rem;
 
-    @mixin atSmall {
+    @media (min-width: 530px) {
         padding-left: 94px;
     }
+}
     
-    &__icon {
-        display: block;
-        margin: 0 auto;
+.feature-item__icon {
+    display: block;
+    margin: 0 auto;
 
-        @mixin atSmall{
+    @media (min-width: 530px) {
         position: absolute;
         left: 0;
-        }
     }
+}
 
-    &__title {
-        font-size: 1.6rem;
-        font-weight: 300;
-        margin-bottom: .8rem;
-        margin-top: .7em;
-        text-align: center;
+.feature-item__title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: .8rem;
+    margin-top: .7em;
+    text-align: center;
 
-        @mixin atSmall {
-            font-size: 1.875rem;
-            text-align: left;
-            margin-top: 1em;
-        }
+    @media (min-width: 530px) {
+        font-size: 1.875rem;
+        text-align: left;
+        margin-top: 1em;
     }
 }
