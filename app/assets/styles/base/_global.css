@@ -32,3 +32,8 @@ img {
 * {
     box-sizing: border-box;
 }
+
+p {
+    color: #f1f2e3;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,33 @@
+.experience-box {
+    background-color: #bbd09f;
+    width: 48%;
+    float: left;
+    padding: 20px 40px;
+    border: #ffadbb 8px solid;
+    margin-top: 20px;
+}
+
+.experience-box__right {
+    background-color: #bbd09f;
+    width: 48%;
+    float: right;
+    padding: 20px 40px;
+    border: #ffadbb 8px solid;
+    margin-top: 20px;
+}
+
+.experience-box__title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.experience-box__text-left {
+    width: 50%;
+    float: left;
+}
+
+.experience-box__text-right {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
