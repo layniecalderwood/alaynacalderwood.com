@@ -22,7 +22,7 @@ document.querySelectorAll(".open-modal").forEach(el => {
             modal.openTheModal()
         }
     })
-})
+});
 
 if (module.hot) {
     module.hot.accept()
