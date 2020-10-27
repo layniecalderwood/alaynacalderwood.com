@@ -1,0 +1,82 @@
+.experience-block--place {
+    padding-top: 0;
+    font-size: 1.5rem;
+    color: #386641;
+    letter-spacing: 0;
+    font-weight: 700;
+    text-align: center;
+
+    @media (min-width: 800px) {
+        padding-top: 15px;
+        text-align: left!important;
+        font-size: 1.2rem;
+    }
+}
+
+.experience-block--time {
+    font-size: 1rem;
+    text-align: center;
+    color: #386641;
+
+    @media (min-width: 800px) { 
+        font-weight: 100;
+        letter-spacing: .01rem;
+        font-size: 1rem;
+        text-align: left!important;
+    }
+}
+
+.experience-block--description-header {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: #386641;
+    letter-spacing: 0;
+    font-weight: 600;
+    text-align: center;
+
+    @media (min-width: 800px) {
+        padding-top: 15px;
+        padding-bottom: 0;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-align: left!important;
+    }
+}
+
+.experience-block--description {
+    font-size: 1rem;
+    text-align: center;
+    color: #386641;
+
+    @media (min-width: 800px) {
+        font-size: 1rem;
+        text-align: left!important;
+    }
+}
+
+.experience-block--location {
+    padding-top: 10px;
+    font-weight: 500;
+    color: #FFADBB;
+    text-align: center;
+    font-size: 1rem;
+
+    @media (min-width: 800px) {
+        text-align: left!important;
+        font-size: 1rem;
+    }
+}
+
+.experience-block__icon {
+    color: #FFADBB;
+    padding-right: 2px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1rem;
+
+    @media (min-width: 800px) {
+        text-align: left!important;
+        font-size: 1rem;
+    }
+}

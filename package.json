@@ -1,7 +1,6 @@
 {
   "name": "travel-site",
   "version": "1.0.0",
-  "type" : "module",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack",
