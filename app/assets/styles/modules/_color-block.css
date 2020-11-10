@@ -1,0 +1,27 @@
+.color-block {
+    display: inline-block;
+    width: 33%;
+    background-color: #bbd09f;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.color-block-2 {
+    display: inline-block;
+    width: 33%;
+    background-color: #ffadbb;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.color-block-text {
+    color: #f2f1e3;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.color-block-image {
+    padding: 20px;
+}
