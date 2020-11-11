@@ -27,9 +27,9 @@
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
             <li><a class="nav-link" href="#experience" id="experience-link">Experience</a></li>
-            <li><a class="nav-link" href="#skills" id="skills-link">Skills</a></li>
             <li><a class="nav-link" href="#portfolio" id="portfolio-link">Portfolio</a></li>
-            <li><a class="nav-link" href="#about" id="about-link">About</a></li>
+            <li><a class="nav-link" href="#skills" id="skills-link">Skills</a></li>
+            <li><a class="nav-link" href="#dramaturgy" id="dramaturgy-link">Dramaturgy</a></li>
           </ul>
         </nav>
       </div>
@@ -178,79 +178,128 @@
     </div>
   </div>
   
-  <div id="skills" data-matching-link="#skills-link" style="background-color: #bbd09f; padding: 50px 0 35px 0;">
-    <!-- Slideshow container -->
-      <div class="slideshow-container">
+  <div id="portfolio" data-matching-link="#portfolio-link" class="page-section" style="background-color: #bbd09f; padding: 50px 50px 100px 50px;">
+    <h2 class="section-title">Portfolio</h2>
+    <p style="text-align: center; padding-top: 0; padding-bottom: 20px;">A collection of my design work and writing samples, as well as certifications I've earned.</p>
+    <div class="row-lightbox">
+      <div class="col-lightbox">
+         <img src="assets/images/Websites.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car on the road." />
+      </div>
+      <div class="col-lightbox">
+         <img src="assets/images/Writing_Samples.png" onclick="openLightbox();toSlide(6)" class="hover-shadow preview" alt="Toy car exploring offroad." />
+      </div>
+      <div class="col-lightbox">
+         <img src="assets/images/Certificates.png" onclick="openLightbox();toSlide(10)" class="hover-shadow preview" alt="Toy car in the city" />
+      </div>
+    </div>
+    
+    <div id="Lightbox" class="modal-lightbox">
+    
+      <span class="close-lightbox pointer" onclick="closeLightbox()">&times;</span>
+      <div class="modal-lightbox-content">
+        <div class="slide">
+          <img src="assets/images/Websites.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+       </div>
+        <div class="slide">
+          <a target="_blank" href="https://www.onote.com">
+            <img src="assets/images/onote.png" class="image-slide" alt="onote.com" />
+          </a>
+        </div>
+        <div class="slide">
+          <a target="_blank" href="https://www.coryrhunter.com">
+            <img src="assets/images/cory.png" class="image-slide" alt="coryrhunter.com" />
+          </a>
+        </div>    
+        <div class="slide">
+          <a target="_blank" href="https://www.classyjen.com">
+            <img src="assets/images/jen.png" class="image-slide" alt="classyjen.com" />
+          </a>
+        </div>
+        <div class="slide">
+          <img src="assets/images/Writing_Samples.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+       </div>
+        <div class="slide">
+          <a target="_blank" href="https://drive.google.com/file/d/1TRhznQvfeCXfEAsuo9JNu0lmInt4gXhI/view?usp=sharing">
+            <img src="assets/images/china.png" class="image-slide" alt="China: The Upcoming Leaders in the Tech Industry" />
+          </a>
+        </div>
+        <div class="slide">
+          <img src="assets/images/event_modeling.png" class="image-slide" alt="classyjen.com" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/king_henry.png" class="image-slide" alt="classyjen.com" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/Certificates.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
+       </div>
+        <div class="slide">
+          <img src="assets/images/OPI.png" class="image-slide" alt="classyjen.com" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/content_marketing.png" class="image-slide" alt="classyjen.com" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/cms.png" class="image-slide" alt="classyjen.com" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/inbound.png" class="image-slide" alt="classyjen.com" />
+        </div>
+      
+        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div> 
+    </div>
+    
+    <script>
+      let slideIndex = 1;
+      showSlide(slideIndex);
+      
+      function openLightbox() {
+        document.getElementById('Lightbox').style.display = 'block';
+      };
+      
+      function closeLightbox() {
+        document.getElementById('Lightbox').style.display = 'none';
+      };
+      
+      function changeSlide(n) {
+        showSlide(slideIndex += n);
+      };
+      
+      function toSlide(n) {
+        showSlide(slideIndex = n);
+      };
+      
+      function showSlide(n) {
+        const slides = document.getElementsByClassName('slide');
+        let modalPreviews = document.getElementsByClassName('modal-preview');
+      
+        if (n > slides.length) {
+          slideIndex = 1;	
+        };
         
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img src="assets/images/Websites.png" style="width:100%">
-        </div>
+        if (n < 1) {
+          slideIndex = slides.length;
+        };
+      
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        };
+        
+        for (let i = 0; i < modalPreviews.length; i++) {
+          modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+        };
+        
+        slides[slideIndex - 1].style.display = 'block';
+        modalPreviews[slideIndex - 1].className += ' active';
+      };
+    </script>
+  </div>
 
-        <div class="mySlides fade">
-          <a href="https://www.onote.com">
-            <img src="assets/images/onote.png" style="width:100%">
-          </a>
-        </div>
-
-        <div class="mySlides fade">
-          <a href="https://coryrhunter.com">
-            <img src="assets/images/cory.png" style="width:100%">
-          </a>
-        </div>
-
-        <div class="mySlides fade">
-          <a href="https://classyjen.com">
-            <img src="assets/images/jen.png" style="width:100%">
-          </a>
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-      <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-        }
-      </script>
-    <!-- <div class="wrapper"> -->
-      <!-- <h2 class="section-title">Skills</h2> -->
-      <!-- <div class="row row--gutters-large generic-content-container">
+<div id="skills" data-matching-link="#skills-link" style="background-color: #f2f1e3; padding: 50px;">
+  <div class="wrapper">
+    <h2 class="section-title">Skills</h2>
+      <div class="row row--gutters-large generic-content-container">
         <div class="row__medium-6">
           <div class="feature-item">
             <li>
@@ -271,51 +320,15 @@
             </li>
           </div>
         </div>
-      </div> -->
-    <!-- </div> -->
-  </div>
- 
-
-  <!-- <div id="portfolio" class="page-section page-section--testimonials page-section--no-b-padding-until-large" data-matching-link="#portfolio-link">
-      <h2 class="section-title section-title--blue">Portfolio</h2>
-  
-      <div class="row row--gutters row--equal-height-at-large row--gutters-small row--t-padding generic-content-container"> 
-        <div class="row__large-4">
-          <div class="testimonial">
-            <div class="testimonial__photo">
-              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe">
-            </div>
-            <a href="https://onote.com"><h3 class="testimonial__title">oNote.com</h3></a>
-            <h4 class="testimonial__subtitle">Product marketing website</h3>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-          </div>
-        </div>
-
-        <div class="row__large-4">
-          <div class="testimonial">
-            <div class="testimonial__photo">
-              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="John Smith">
-            </div>
-            <a href="https://coryrhunter.com"><h3 class="testimonial__title">coryrhunter.com</h3></a>
-            <h4 class="testimonial__subtitle">Resume website</h3>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-          </div>
-        </div>
-        
-
-        <div class="row__large-4">
-          <div class="testimonial testimonial--last">
-            <div class="testimonial__photo">
-              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w" alt="Cat McKitty">
-            </div>
-            <a href="https://classyjen.com"><h3 class="testimonial__title">classyjen.com</h3></a>
-            <h4 class="testimonial__subtitle">Blogging website</h3>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
-          </div>
-        </div>
       </div>
-  </div> -->
+    </div>
+  </div>
 
+  <div id="dramaturgy" data-matching-link="#dramaturgy-link" style="background-color: #bbd09f; padding: 50px;">
+    <h2 class="section-title">Dramaturgy</h2>
+  </div>
+
+ 
   <footer class="site-footer">
     <div class="wrapper"><p><span class="site-footer__text"><a href="#" class="btn btn--orange open-modal">Get in Touch</a></p></div>
   </footer>
