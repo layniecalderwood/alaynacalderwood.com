@@ -17,6 +17,10 @@
     }
 }
 
+.feature-item__icon--empty {
+    color: #bbd09f;
+}
+
 .feature-item__title {
     font-size: 1.6rem;
     font-weight: 300;

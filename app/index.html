@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="shortcut icon" type="image/png" href="assets/images/AC.png">
   <title>Alayna Calderwood</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
@@ -11,10 +12,12 @@
 <body>
   <header class="site-header">
     <div class="wrapper-nav">
+      <a href="#">
       <div class="site-header__logo" style="border-bottom: #bbd09f 15px solid;">
         <!-- <img src="assets/images/icons/clear-view-escapes.svg"> -->
         <h1 class="site-header__logo-text">Alayna <br> Calderwood</h1>
       </div>
+    </a>
 
       <div class="site-header__menu-icon">
         <div class="site-header__menu-icon__middle"></div>
@@ -70,7 +73,7 @@
             
         <div class="column column--col-md-8">
             <h4 class="experience-block experience-block--description-header">
-              BA in Theatre Arts Studies, Minor in Chinese, GPA: 3.67
+              BA in Theatre Arts Studies, Minor in Chinese
             </h4>
             <div class="experience-block experience-block--description">
               Theatre Arts Studies coursework includes teaching, history, and research/writing courses. Chinese coursework includes culture and literature courses in addition to speaking, reading, and writing courses. Other relevant coursework includes a Management Communications class.
@@ -96,7 +99,7 @@
         </div>
         <div class="column column--col-md-8">
             <h4 class="experience-block experience-block--description-header">
-              Marketing Specialist, Part-time
+              Web Developer, Part-time
             </h4>
             <div class="experience-block experience-block--description">
                 Maintaining the <a href="https://onote.com">oNote.com</a> website and generating new content for the blog. 
@@ -119,7 +122,7 @@
             Marketing Intern
           </h4>
           <div class="experience-block experience-block--description">
-            This internship involved learning CSS and HTML to create a website for the launch of a new Event Modeling product. See <a href="https://onote.com">oNote.com</a>. I learned HubSpot to create landing pages, publish content, and generate leads. 
+            This internship involved learning CSS, HTML, and JavaScript to create a website for the launch of a new Event Modeling product. See <a href="https://onote.com">oNote.com</a>. I also learned HubSpot to create landing pages, publish content, and generate leads. 
           </div>
           <div class="experience-block experience-block--location">
             <i class="experience-block experience-block__icon fas fa-map-marker-alt"></i>
@@ -179,8 +182,10 @@
   </div>
   
   <div id="portfolio" data-matching-link="#portfolio-link" class="page-section" style="background-color: #bbd09f; padding: 50px 50px 100px 50px;">
-    <h2 class="section-title">Portfolio</h2>
-    <p style="text-align: center; padding-top: 0; padding-bottom: 20px;">A collection of my design work and writing samples, as well as certifications I've earned.</p>
+    <h2 class="section-title" style="margin-bottom: 0;">Portfolio</h2>
+    <div class="wrapper">
+      <p style="text-align: center; padding-top: 0; padding-bottom: 20px;">A collection of my design work and writing samples, as well as certifications I've earned. Each image is clickable and will take you to the full work.</p>
+    </div>
     <div class="row-lightbox">
       <div class="col-lightbox">
          <img src="assets/images/Websites.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Toy car on the road." />
@@ -224,25 +229,37 @@
           </a>
         </div>
         <div class="slide">
-          <img src="assets/images/event_modeling.png" class="image-slide" alt="classyjen.com" />
+          <a target="_blank" href="https://onote.com/blog/event-modeling-explained/">
+            <img src="assets/images/event_modeling.png" class="image-slide" alt="Event Modeling Explained" />
+          </a>
         </div>
         <div class="slide">
-          <img src="assets/images/king_henry.png" class="image-slide" alt="classyjen.com" />
+          <a target="_blank" href="https://drive.google.com/file/d/1wQs-AI7MzWoMtq1nglK2fmxDbAAisPPw/view?usp=sharing">
+            <img src="assets/images/king_henry.png" class="image-slide" alt="King Henry and Nationalism" />
+          </a>
         </div>
         <div class="slide">
           <img src="assets/images/Certificates.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Toy car on the road." />
        </div>
         <div class="slide">
-          <img src="assets/images/OPI.png" class="image-slide" alt="classyjen.com" />
+          <a target="_blank" href="https://drive.google.com/file/d/1BCEVWsu6djxU5GPKicQhps-DOFlyL1Pa/view?usp=sharing">
+            <img src="assets/images/OPI.png" class="image-slide" alt="OPI Certificate" />
+          </a>
         </div>
         <div class="slide">
-          <img src="assets/images/content_marketing.png" class="image-slide" alt="classyjen.com" />
+          <a target="_blank" href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/04338c37955e44609ae595c626575ac9-1588861655426.png">
+            <img src="assets/images/content_marketing.png" class="image-slide" alt="Hubspot Content Marketing" />
+          </a>
         </div>
         <div class="slide">
-          <img src="assets/images/cms.png" class="image-slide" alt="classyjen.com" />
+          <a target="_blank" href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/140795780b024f549815cac20cdf8e11-1588260143641.png">
+            <img src="assets/images/cms.png" class="image-slide" alt="Hubspot CMS" />
+          </a>
         </div>
         <div class="slide">
-          <img src="assets/images/inbound.png" class="image-slide" alt="classyjen.com" />
+          <a target="_blank" href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/17ade45417954b53bfb93fe329422375-1588346519086.png">
+            <img src="assets/images/inbound.png" class="image-slide" alt="Hubspot Inbound" />
+          </a>
         </div>
       
         <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
@@ -296,36 +313,96 @@
     </script>
   </div>
 
-<div id="skills" data-matching-link="#skills-link" style="background-color: #f2f1e3; padding: 50px;">
+<div id="skills" data-matching-link="#skills-link" style="background-color: #f2f1e3; padding: 50px 0;">
   <div class="wrapper">
     <h2 class="section-title">Skills</h2>
-      <div class="row row--gutters-large generic-content-container">
         <div class="row__medium-6">
           <div class="feature-item">
             <li>
-              <ul class="feature-item__title">Mandarin Chinese</ul>
-              <ul class="feature-item__title">Writing</ul>
-              <ul class="feature-item__title">Research</ul>
-              <ul class="feature-item__title">Public Speaking</ul>
+              <span>Mandarin Chinese</span>
+            </li>
+            <li style="float: right;">
+              <i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i>
+            </li>
+          </div>
+
+          <div class="feature-item">
+            <li>
+              <span>Writing</span>
+            </li>
+            <li style="float: right;">
+              <i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i>
+            </li>
+          </div>
+
+          <div class="feature-item">
+            <li>
+              <span>Event Coordinating</span>
+            </li>
+            <li style="float: right;">
+              <i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i>
+            </li>
+          </div>
+
+          <div class="feature-item">
+            <li>
+              <span>Public Speaking</span>
+            </li>
+            <li style="float: right;">
+              <i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i>
             </li>
           </div>
         </div>
-        <div class="row__medium-6">
+
+        <div class="row__medium-6" style="padding-right: 70px;">
           <div class="feature-item">
             <li>
-              <ul class="feature-item__title">Hubspot</ul>
-              <ul class="feature-item__title">HTML</ul>
-              <ul class="feature-item__title">CSS</ul>
-              <ul class="feature-item__title">JavaScript</ul>
+              <span>Hubspot</span>
+            </li>
+            <li style="float: right;">
+              <i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i>
+            </li>
+          </div>
+
+          <div class="feature-item">
+            <li>
+              <span>HTML</span>
+            </li>
+            <li style="float: right;">
+              <i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i>
+            </li>
+          </div>
+              
+          <div class="feature-item">
+            <li>
+              <span>CSS</span>
+            </li>
+            <li style="float: right;">
+              <i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i>
+            </li>
+          </div>
+
+          <div class="feature-item">
+            <li>
+              <span>JavaScript</span>
+            </li>
+            <li style="float: right;">
+              <i class="skills skills__icon fas fa-star"></i><i class="skills skills__icon--empty  fas fa-star"></i><i class="skills skills__icon--empty  fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i><i class="skills skills__icon--empty fas fa-star"></i>
             </li>
           </div>
         </div>
       </div>
-    </div>
   </div>
 
   <div id="dramaturgy" data-matching-link="#dramaturgy-link" style="background-color: #bbd09f; padding: 50px;">
-    <h2 class="section-title">Dramaturgy</h2>
+    <h2 class="section-title" style="margin-bottom: 0;">Dramaturgy</h2>
+    <div class="wrapper">
+      <p style="text-align: center; padding-top: 0; padding-bottom: 20px;">An unconventional background in the arts gives me a competitive edge in creative thinking and out-of-the-box problem solving.</p>
+    </div>
+    <div class="dramaturgy-info">
+      <img class="dramaturgy" src="assets/images/What is Dramaturgy_.png" alt="What is Dramaturgy?">
+      <img class="dramaturgy" src="assets/images/roles of.png" alt="Roles of a Dramaturg">
+    </div>
   </div>
 
  

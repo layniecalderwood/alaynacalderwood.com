@@ -1,6 +1,7 @@
 .large-hero {
     border-bottom: 10px solid #386641;
     position: relative;
+    overflow: hidden;
 }
 
 .large-hero__image {
