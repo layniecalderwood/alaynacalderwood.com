@@ -21,7 +21,7 @@
     display: none;
     position: fixed;
     z-index: 1000;
-    padding: 50px 20px 0 20px;
+    padding: 30px 20px 0 20px;
     left: 0;
     top: 0;
     width: 100%;
@@ -46,7 +46,7 @@
   }
   
   .image-slide {
-      height: 600px;
+      height: 635px;
       width: 100%;
   }
   
@@ -126,4 +126,12 @@
   .previous:hover,
   .next:hover {
     background-color: #bbd09f;
+  }
+
+  .numbertext {
+    color: #bbd09f;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
   }
