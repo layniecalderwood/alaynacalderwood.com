@@ -49,6 +49,13 @@
 .headline--left-small {
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+
+    @media (min-width: 800px) {
+        text-align: left;
+        text-decoration: none;
+    }
 }
 
 

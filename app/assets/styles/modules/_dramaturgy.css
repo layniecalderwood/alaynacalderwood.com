@@ -1,9 +1,21 @@
 .dramaturgy {
-    width: 45%;
-    margin-left: 20px;
-    /* border: 5px #386641 solid; */
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: 800px) {
+        width: 45%;
+        margin-left: 20px;
+        margin-bottom: 0;
+        /* border: 5px #386641 solid; */
+    }
+
 }
 
 .dramaturgy-info {
-    margin-left: 50px;
+    margin-left: 0;
+
+    @media (min-width: 800px) {
+        margin-left: 50px;
+    } 
 }

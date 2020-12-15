@@ -68,6 +68,12 @@
           float: left;
           width: 50%;
       }
+
+      &__medium-6-padding {
+        float: left;
+        width: 50%;
+        padding-right: 70px;
+    }
   
       &__medium-8 {
           float: left;
