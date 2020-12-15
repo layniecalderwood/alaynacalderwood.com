@@ -9,7 +9,7 @@
   <title>Alayna Calderwood</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
-<link href="styles.0f6958d5b74b453584cc.css" rel="stylesheet"></head>
+<link href="styles.f3cfad560479400bb9b5.css" rel="stylesheet"></head>
 <body>
   <header class="site-header">
     <div class="wrapper-nav">
@@ -77,7 +77,7 @@
               BA in Theatre Arts Studies, Minor in Chinese
             </h4>
             <div class="experience-block experience-block--description">
-              Theatre Arts Studies coursework includes teaching, history, and research/writing courses. Chinese coursework includes culture and literature courses in addition to speaking, reading, and writing courses. Other relevant coursework includes a Management Communications class.
+              Theatre Arts Studies coursework includes teaching, history, and research/writing courses. Chinese coursework includes culture and literature courses in addition to speaking, reading, and writing courses. Other relevant coursework includes Management Communications, Intro to Marketing, and Intro to Finance.
               <br>
               <br>
               As well as being involved with many university and student level productions, I've also volunteered for the BYU Student Association, the Student Alumni Association, and the University Accessibility Center. 
@@ -103,7 +103,7 @@
               Web Developer, Part-time
             </h4>
             <div class="experience-block experience-block--description">
-                Maintaining the <a href="https://onote.com">oNote.com</a> website and generating new content for the blog. 
+                Maintaining the <a href="https://onote.com">oNote.com</a> website and updating content. 
             </div>
             <div class="experience-block experience-block--location">
               <i class="experience-block experience-block__icon fas fa-map-marker-alt"></i>       
@@ -123,7 +123,7 @@
             Marketing Intern
           </h4>
           <div class="experience-block experience-block--description">
-            This internship involved learning CSS, HTML, and JavaScript to create a website for the launch of a new Event Modeling product. See <a href="https://onote.com">oNote.com</a>. I also learned HubSpot to create landing pages, publish content, and generate leads. 
+            This internship involved learning CSS, HTML, and JavaScript to create a website for the launch of a new Event Modeling product (see <a href="https://onote.com">oNote.com</a>). I also learned HubSpot to create landing pages, publish content, and generate leads. 
           </div>
           <div class="experience-block experience-block--location">
             <i class="experience-block experience-block__icon fas fa-map-marker-alt"></i>
@@ -185,7 +185,7 @@
   <div id="portfolio" data-matching-link="#portfolio-link" class="page-section" style="background-color: #bbd09f; padding: 50px 50px 100px 50px;">
     <h2 class="section-title" style="margin-bottom: 0;">Portfolio</h2>
     <div class="wrapper">
-      <p style="text-align: center; padding-top: 0; padding-bottom: 20px;">Check out this collection of my web design work and writing samples, as well as certifications I've earned. Each image is clickable and will take you to the full work!</p>
+      <p class="section-description">Check out this collection of my web design work and writing samples, as well as certifications I've earned. Each image is clickable and will take you to the full work!</p>
     </div>
     <div class="row-lightbox">
       <div class="col-lightbox">
@@ -359,7 +359,7 @@
           </div>
         </div>
 
-        <div class="row__medium-6" style="padding-right: 70px;">
+        <div class="row__medium-6-padding">
           <div class="feature-item">
             <li>
               <span>Hubspot</span>
@@ -402,17 +402,81 @@
   <div id="dramaturgy" class="page-section" data-matching-link="#dramaturgy-link" style="background-color: #bbd09f; padding: 50px;">
     <h2 class="section-title" style="margin-bottom: 0;">Dramaturgy</h2>
     <div class="wrapper">
-      <p style="text-align: center; padding-top: 0; padding-bottom: 20px;">In college, I studied dramaturgy. My unconventional background in the arts gives me a competitive edge in creative thinking and out-of-the-box problem solving.</p>
+      <p class="section-description">In college, I studied a unique field in theatre called dramaturgy. Choosing dramaturgy was a deliberate choice to further my pursuits in business. My unconventional background in the arts gives me a competitive edge in creative thinking and out-of-the-box problem solving.</p>
     </div>
     <div class="dramaturgy-info">
       <img class="dramaturgy" src="assets/images/What is Dramaturgy_.png" alt="What is Dramaturgy?">
       <img class="dramaturgy" src="assets/images/roles of.png" alt="Roles of a Dramaturg">
     </div>
-  </div>
+      <!-- <div class="row-dramaturgy">
+        <div class="column-dramaturgy">
+          <img src="assets/images/Dramaturgy-Portfolio.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+      </div> -->
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModalDramaturgy" class="modal-dramaturgy">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-dramaturgy-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="assets/images/grafitti2.jpg" style="width:100%">
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+
+      <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById("myModalDramaturgy").style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById("myModalDramaturgy").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    </div>
 
   <footer class="site-footer">
     <div class="wrapper"><p><span class="site-footer__text"><a href="#" class="btn open-modal">Get in Touch</a></p></div>
   </footer>
 
-<script type="text/javascript" src="vendors~main.c10d56a4e39c9fd05a73.js"></script><script type="text/javascript" src="main.0f6958d5b74b453584cc.js"></script></body>
+<script type="text/javascript" src="vendors~main.c10d56a4e39c9fd05a73.js"></script><script type="text/javascript" src="main.f3cfad560479400bb9b5.js"></script></body>
 </html>
